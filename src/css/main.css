@@ -6,6 +6,8 @@
 
 body {
   padding: 20px;
+  text-align: center;
+  font-family: "Hammersmith One";
 }
 
 a {
@@ -15,4 +17,88 @@ a {
 img,
 video {
   display: block;
+}
+
+.description-title {
+  margin-top: 20px;
+}
+
+.download-title {
+  margin-top: 5px;
+}
+
+.description-content {
+  font-family: Inter;
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+.logos {
+  display: flex;
+  width: 100%;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 20px;
+  img {
+    width: 60px;
+  }
+}
+
+h3 {
+  font-family: Inter;
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+
+.download-content {
+  font-family: Inter;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+@media (max-width: 992px) {
+  .download-content.desktop {
+    display: none;
+  }
+}
+
+@media (min-width: 576px) {
+  h2 {
+    font-size: 28px;
+  }
+
+  .logos {
+    margin: 50 0px;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 992px) {
+  h2 {
+    font-size: 36px;
+  }
+
+  .description-title {
+    text-align: left;
+  }
+
+  .description-content {
+    font-size: 20px;
+    text-align: left;
+  }
+
+  .logos {
+    justify-content: start;
+    img {
+      width: 100px;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .download-content.mobile {
+    display: none;
+  }
 }
